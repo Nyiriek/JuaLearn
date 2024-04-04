@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuaLearn Platform</title>
     <link rel="stylesheet" href="home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Caveat:wght@500&family=Roboto:wght@400;500;700&family=Saira+Condensed:wght@500&family=Young+Serif&display=swap"
-    rel="stylesheet"/>
-    <title>JuaLearn</title>
+    <link rel="stylesheet" href="home.js">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">JuaLearn</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#courses">Courses</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section>
-    </section>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">JuaLearn</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/courses.html">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search Subject">
+                <a href="/courses.html"> <button class="btn">Search</button></a>
+            </div>
+        </div>
+        <div class="content">
+            <h1><span class="multiText"></span></h1>
+            <p class="par">JuaLearn is an innovative web-based educational 
+                <br>platform designed for high school students in South Sudan. 
+                <br>It offers seamless access via desktop and mobile devices and 
+                <br>comprises modules like Learning Resources, Collaboration Tools, 
+                <br>and Feedback Mechanisms. 
+                <br>The platform prioritizes accessibility, data privacy, and 
+                <br>performance, providing students with quality content, peer 
+                <br>collaboration, and personalized 
+                <br>feedback to enhance their learning experience and academic success. 
+                <br>JuaLearn aims to democratize education, foster collaboration, and empower students 
+                <br>to thrive in their academic pursuits.
+            </p>
+            <div>
+                <button><a href="/courses.html">BROWSE NOW</a></button>
+            </div>
+        </div>
+        <div class="form">
+            <h2>Login Here</h2>
+            <input type="email/username" name="email/username" placeholder="Enter Email/Username">
+            <input type="password" name="" placeholder="Enter Password">
+            <button class="btnn"><a href="/account.html">Login</a></button>
+            <p class="link">Don't have an account?<br>
+            <a href="/user/signup.html">Sign up</a></p>
+            <p class="liw">Login with</p>
+            
+            <div class="icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            </div>
+        </div>
+    </div>
     <footer>
+        
     </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!--Typed js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!--Scrollreveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--custom js-->
+    <script src="home.js"></script>
 </body>
 </html>

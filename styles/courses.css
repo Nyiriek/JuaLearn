@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #fff;
+    background: #1f242d;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #0aa1a6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5rem;
+    margin-top: 0;
+    color: #0aa1a6;
+}
+
+h4 {
+    font-size: 25px;
+    line-height: 25.5px;
+    color: #0aa1a6;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-flexbox;
+    border-radius: 6px;
+    background: rgb(3, 134, 134);
+    color: #000;
+    padding: 1rem 2rem;
+    font-weight: 400;
+    gap: 1.2rem;
+}
+
+.btn:hover {
+    background: #0aa1a6;
+}
+
+.courses{
+    margin-top: 0;
+}
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.course{
+background: #171929;
+text-align: center;
+border: 1px solid #171929;
+transition: 400ms ease;
+}
+.course_info{
+    padding: 2rem;
+}
+.course_info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+

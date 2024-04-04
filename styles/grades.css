@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url(images\ \(1\).jpeg);
+    background-size: cover;
+}
+
+a {
+    margin-left: 5%;
+    margin-top: 5%;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0aa1a6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #0aa1a6;
+}
+
+.grades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grade {
+    background-color: #171929;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.grade h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.grade p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    color: #0aa1a6;
+} 
