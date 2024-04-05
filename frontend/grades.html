@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+    <link rel="stylesheet" href="/frontend/styles/grades.css">
+</head>
+
+<body>
+    <a href="/frontend/account.html">Back to Dashboard</a>
+    <div class="container">
+        <header>
+            <h1>Grades</h1>
+        </header>
+        <section class="grades">
+            <div class="grade">
+                <h3>Chemistry</h3>
+                <p>Grade: A</p>
+            </div>
+            <div class="grade">
+                <h3>Biology</h3>
+                <p>Grade: B+</p>
+            </div>
+            <div class="grade">
+                <h3>Geography</h3>
+                <p>Grade: A-</p>
+            </div>
+            <div class="grade">
+                <h3>History</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>Maths</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>English</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>Literature</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>Citizenship</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>Economics</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>Computer science</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>C.R.E</h3>
+                <p>Grade: B</p>
+            </div>
+            <div class="grade">
+                <h3>Physics</h3>
+                <p>Grade: B</p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // AJAX request to retrieve grades
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Response received successfully
+                var grades = JSON.parse(this.responseText);
+                displayGrades(grades);
+            }
+        };
+        xhttp.open("GET", "http://localhost:3000/grades", true); // Replace with your backend URL
+        xhttp.send();
+        
+        // Function to display grades
+        function displayGrades(grades) {
+            var gradesContainer = document.getElementById("gradesContainer");
+            var html = "<h1>Grades</h1>";
+            html += "<ul>";
+            grades.forEach(function(grade) {
+                html += "<li>" + grade.subject + ": " + grade.grade + "</li>";
+            });
+            html += "</ul>";
+            gradesContainer.innerHTML = html;
+        }
+        </script>
+</body>
+
+</html>

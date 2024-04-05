@@ -31,68 +31,28 @@
     <div id="overlay" class="overlay"></div>
 
     <script>
-        function validateAndSubmit() {
-            var username = document.getElementById('username').value;
-            var email = document.getElementById('email').value;
-            var password = document.getElementById('password'), value;
-
-            // Perform basic form validation (you can add more complex validation as needed)
-            if (!username || !email || !password) {
-                showAlert('Please fill in all fields');
-                return;
-            }
-
-            // Create a data object
-            var formData = {
-                username: username,
-                email: email,
-                password: password
+        // AJAX request for user signup
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    // Response received
+                    if (this.status == 200) {
+                        alert("Signup successful!");
+                        window.location.href = "/frontend/account.html"; // Redirect to account page
+                    } else {
+                        alert("Signup failed. Please try again.");
+                    }
+                }
             };
-
-            // Save data to localStorage
-            localStorage.setItem('user', JSON.stringify(formData));
-
-            // Show custom alert for 5 seconds
-            showAlert('Signup successful!', 5000);
-
-            // Redirect to the homepage after the alert duration
-            setTimeout(function () {
-                window.location.href = '/homepage/home.html';
-            }, 5000);
-
-            // Add link to homepage
-            var homepageLink = document.createElement('a');
-            homepageLink.href = '/homepage/home.html';
-
-            // Append the link to a suitable container element
-            document.body.appendChild(homepageLink);
-        }
-
-        function showAlert(message, duration) {
-            var modal = document.getElementById('customAlert');
-            var overlay = document.getElementById('overlay');
-            var alertMessage = document.getElementById('alertMessage');
-
-            // alert message
-            alertMessage.innerText = message;
-
-            modal.style.display = 'block';
-            overlay.style.display = 'block';
-
-            // Close the alert after the specified duration
-            setTimeout(function () {
-                closeCustomAlert();
-            }, duration);
-        }
-
-        function closeCustomAlert() {
-            var modal = document.getElementById('customAlert');
-            var overlay = document.getElementById('overlay');
-
-            modal.style.display = 'none';
-            overlay.style.display = 'none';
-        }
-    </script>
+            xhttp.open("POST", "http://localhost:3000/signup", true); // Replace with your backend URL
+            xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhttp.send(new URLSearchParams(formData).toString());
+        });
+        </script>
+        
 
 </body>
 
