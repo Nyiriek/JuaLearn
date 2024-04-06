@@ -20,7 +20,7 @@ To access JuaLearn on your local machine, follow these steps:
 5. select option to use live server or get a live preview from on the web
 
 ## URL
-To access STEM BUDDY online , Click on the here
+Click here to access JuaLearn online
 
 ## Technologies Used
 
