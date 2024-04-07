@@ -20,7 +20,7 @@ Follow these steps to run JuaLearn on your local computer:
 5. select option to use live server or get a live preview from on the web
 
 ## URL
-Click on the link : https://jualear.netlify.app/ to access JuaLearn online
+Click on the link : https://jua-lear.netlify.app/ to access JuaLearn online
 
 ## Technologies Used
 
