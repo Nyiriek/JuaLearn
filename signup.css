@@ -19,7 +19,7 @@ body {
     position: relative;
     margin: auto;
     height: auto;
-    background: transparent;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%, rgba(0,0,0,0.7)50%);
     border-radius: 20px;
     align-self: center;
     display: block;
@@ -67,17 +67,17 @@ form {
 
 #username {
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #ffffff;
 }
 
 #email {
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #ffffff;
 }
 
 #password {
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #ffffff;
 }
 
 input {
