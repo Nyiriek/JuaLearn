@@ -3,7 +3,7 @@
 <head>
     <title>JuaLearn - signup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/frontend/styles/signup.css" rel="stylesheet">
+    <link href="/styles/signup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,6 +18,9 @@
             <label for="password">Password:</label>
             <input type="3" type="password" name="password" id="password" required>
             <button type="button" onclick="validateAndSubmit()">Signup</button>
+            <p class="link">Already have an account?
+                <a href="/homepage/login.html">Login</a>
+            </p>
         </form>
     </div>
 
@@ -57,12 +60,12 @@
 
             // Redirect to the homepage after the alert duration
             setTimeout(function () {
-                window.location.href = '/frontend/homepage/index.html';
+                window.location.href = '/homepage/index.html';
             }, 5000);
 
             // Add link to homepage
             var homepageLink = document.createElement('a');
-            homepageLink.href = '/frontend/homepage/index.html';
+            homepageLink.href = '/homepage/index.html';
 
             // Append the link to a suitable container element
             document.body.appendChild(homepageLink);
