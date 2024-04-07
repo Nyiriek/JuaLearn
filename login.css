@@ -3,6 +3,12 @@ body {
     background-size: cover;
 }
 
+a {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 20px;
+}
+
 .form {
     width: 400px;
     height: 480px;
