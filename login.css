@@ -15,7 +15,7 @@ a {
     background: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%);
     position: relative;
     top: 40px;
-    left: 450px;
+    left: 400px;
     border-radius: 10px;
     padding: 25px;
 }
@@ -122,3 +122,10 @@ a {
 .icons ion-icon:hover {
     color: #0aa1a6;
 } 
+
+@media screen and (max-width: 768px) {
+    .form {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

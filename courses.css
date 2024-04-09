@@ -97,3 +97,22 @@ transition: 400ms ease;
     font-size: 0.9rem;
 }
 
+@media screen and (max-width: 768px) {
+    section h2 {
+        font-size: 40px; 
+    }
+    
+    h4 {
+        font-size: 20px; 
+        line-height: 22px; 
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem; 
+        font-size: 20px; 
+    }
+    
+    .courses_container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}

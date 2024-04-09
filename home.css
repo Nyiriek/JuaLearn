@@ -1,7 +1,7 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: calc();
+    box-sizing: border-box; 
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
@@ -11,55 +11,51 @@
     background: url(sg.png);
     background-position: center;
     background-size: cover;
-    height: 150vh;
-    margin-bottom: 0;
+    min-height: 100vh;
 }
 
 .navbar {
-    width: 1200px;
-    height: 75px;
+    width: 90%; 
+    max-width: 1200px; 
     margin: auto;
+    height: 75px;
+    display: flex;
+    align-items: center;
 }
 
 .icon {
-    width: 200px;
-    float: left;
+    width: 20%;
     height: 70px;
 }
 
 .logo {
     color: #0aa1a6;
-    font-size: 50px;
+    font-size: 4.5vw; /* Adjusted font size for responsiveness */
     font-weight: bolder;
     font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
+    padding-left: 2.5%; /* Adjusted padding for responsiveness */
+    padding-top: 1%; /* Adjusted padding for responsiveness */
 }
 
 .menu {
-    width: 0px;
-    margin-left: -0px;
-    float: left;
-    height: 500px;
+    flex: 1; 
 }
 
 ul {
-    float: left;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    height: 50%;
 }
 
 ul li {
     list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+    margin-left: 1vw; 
+    font-size: 1.2vw; 
 }
 
 ul li a {
-    font-size: 20px;
+    font-size: 1.5vw; /* Adjusted font size for responsiveness */
     text-decoration: none;
     color: #fff;
     font-family: sans-serif;
@@ -72,64 +68,60 @@ ul li a:hover {
 }
 
 .Login {
-    position: absolute;
-    top: 13px;
-    right: 80px;
+    margin-left: auto; 
 }
 
 .btn {
-    width: 130px;
+    width: 100%; 
     height: 40px;
     background: #0aa1a6;
-    color: #0aa1a6;
-    margin-top: 13px;
-    margin-left: auto;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.5vw; 
     border-radius: 6px;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: #0aa1a6;
+    background-color: #056e71;
 }
 
 .content {
-    width: 1200px;
-    height: auto;
+    width: 90%; 
+    max-width: 1200px;
     margin: auto;
     color: #fff;
-    position: relative;
+    padding: 4% 0; 
+    text-align: justify; 
 }
 
 .content .par {
-    padding-left: 20px;
-    padding-bottom: 25px;
+    padding-left: 2%; 
+    padding-bottom: 2%; 
     font-family: Arial;
-    letter-spacing: 2px;
-    line-height: 30px;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 .content h1 {
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
+    font-family: 'Arial, Sans-Serif';
+    font-size: 2.5vw; /* Adjusted font size for responsiveness */
+    padding-left: 2%; /* Adjusted padding for responsiveness */
     margin-top: 6%;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .content button {
-    width: 160px;
+    width: 12%; 
     height: 40px;
     background: #0aa1a6;
     border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
+    margin-bottom: 2%; 
+    margin-left: 2%; 
+    font-size: 1.2vw; 
     border-radius: 10px;
     cursor: pointer;
 }
+
 .content button a {
     text-decoration: none;
     background-color: #0aa1a6;
@@ -146,9 +138,11 @@ ul li a:hover {
 
 .content span {
     color: #0aa1a6;
-    font-size: 60px;
+    font-size: 3vw;
 }
+
 .about {
     display: flex;
-    
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
