@@ -10,7 +10,7 @@ a {
 }
 
 .form {
-    width: 400px;
+    width: 350px;
     height: 480px;
     background: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%);
     position: relative;
@@ -21,7 +21,7 @@ a {
 }
 
 .form h2 {
-    width: 380px;
+    width: 320px;
     font-family: sans-serif;
     text-align: center;
     color: #0aa1a6;
@@ -57,9 +57,9 @@ a {
 }
 
 .btnn {
-    width: 240px;
-    height: 40px;
-    margin-left: 80px;
+    width: 220px;
+    height: 35px;
+    margin-left: 40px;
     background: #0aa1a6;
     border: none;
     margin-top: 30px;
@@ -113,7 +113,7 @@ a {
 
 .icons ion-icon {
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
     padding-left: 30px;
     padding-top: 5px;
     transition: .3s ease;
