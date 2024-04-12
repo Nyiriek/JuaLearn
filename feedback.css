@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)), url(images\ \(1\).jpeg);
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0aa1a6;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+form {
+    max-width: 600px;
+    height: 350px;
+    margin: 0 auto;
+    background: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4));
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: flex;
+    margin-right: auto;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: both;
+}
+
+button {
+    background-color: #0aa1a6;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #056e71;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #0aa1a6;
+    margin-right: auto;
+}
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+}
