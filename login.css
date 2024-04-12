@@ -10,18 +10,19 @@ a {
 }
 
 .form {
-    width: 350px;
-    height: 480px;
-    background: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%);
+    display: flexbox;
     position: relative;
-    top: 40px;
+    margin-top: 30px;
+    width: 320px;
+    height: 450px;
+    background: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%);
     left: 400px;
     border-radius: 10px;
     padding: 25px;
 }
 
 .form h2 {
-    width: 320px;
+    width: 300px;
     font-family: sans-serif;
     text-align: center;
     color: #0aa1a6;
@@ -57,9 +58,9 @@ a {
 }
 
 .btnn {
-    width: 220px;
+    width: 50%;
     height: 35px;
-    margin-left: 40px;
+    margin-left: 80px;
     background: #0aa1a6;
     border: none;
     margin-top: 30px;
